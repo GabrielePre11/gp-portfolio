@@ -1,0 +1,144 @@
+/*======= RESET =======*/
+:root {
+  /* Typography */
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Outfit', sans-serif;
+
+  /* Colors */
+  --white-col: #ffffff;
+  --blue-gradient: #04152D;
+  --blue-gradient-2: #0A1E4D;
+  --text-col: #d1d5db;
+}
+
+/*======= RESET =======*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.loading {
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--main-font);
+  line-height: 1.5;
+  color: var(--white-col);
+  height: 300vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+span,
+button {
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*======= SCROLLBAR =======*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0A1E4D;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #04152D;
+  border-radius: 10px;
+}
+
+/*======= GLOBAL CLASSES =======*/
+.container {
+  padding-inline: 1rem;
+}
+
+.section {
+  padding-block: 50px 30px;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*======= APP'S BACKGROUND by BG.IBELICK =======*/
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.background-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #0A1E4D 100%);
+}
+
+/*======= MEDIA QUERY =======*/
+@media (min-width: 480px) {
+  .container {
+    max-width: 450px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1230px;
+  }
+}

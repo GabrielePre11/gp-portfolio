@@ -1,0 +1,13 @@
+.section-title {
+    font-family: var(--second-font);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-block-end: 25px;
+}
+
+/*======= MEDIA QUERY =======*/
+@media (min-width: 1440px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+}

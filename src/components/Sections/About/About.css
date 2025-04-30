@@ -1,0 +1,137 @@
+.about .container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.about-desc {
+    display: block;
+    padding-block-end: 20px;
+    font-size: 0.938rem;
+}
+
+.about-desc span {
+    background: linear-gradient(180.11deg, rgba(25, 55, 109, 0.2) 0.1%, #19376D 99.9%);
+    border-radius: 18px;
+    width: max-content;
+    padding: 5px 10px;
+    margin-block-end: 10px;
+    font-family: var(--second-font);
+    font-weight: 500;
+}
+
+.soft-skill-item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    gap: 10px;
+    transition: background 0.5s ease;
+}
+
+.soft-skill-item:first-child {
+    background: linear-gradient(90deg, rgba(165, 215, 232, 0.42) -60.08%, rgba(255, 255, 255, 0) 66.02%);
+    border-radius: 20px;
+}
+
+.icon {
+    background: linear-gradient(180.11deg, rgba(25, 55, 109, 0.2) 0.1%, #19376D 99.9%);
+    border-radius: 50%;
+    width: max-content;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.skill {
+    font-size: 1.125rem;
+    font-family: var(--second-font);
+    margin-block-end: 5px;
+}
+
+.desc {
+    font-size: 0.938rem;
+    color: var(--text-col);
+}
+
+/*======= MEDIA QUERY =======*/
+@media (min-width: 480px) {
+    .about .container {
+        background: linear-gradient(180.11deg, rgba(25, 55, 109, 0.2) 0.1%, #19376D 99.9%);
+        border-radius: 18px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-desc {
+        font-size: 1rem;
+    }
+
+    .soft-skill-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .skill {
+        font-size: 1.25rem;
+    }
+
+    .desc {
+        font-size: 0.950rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about .container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 25px;
+        gap: 2.5rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .skill {
+        font-size: 1.3rem;
+    }
+
+    .about .grid-list {
+        gap: 1.8rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about .container {
+        gap: 3rem;
+    }
+
+    .about-desc {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-desc {
+        font-size: 1.125rem;
+    }
+
+    .icon {
+        font-size: 2.5rem;
+    }
+
+    .skill {
+        font-size: 1.5rem;
+
+    }
+
+    .desc {
+        font-size: 1.1rem;
+    }
+}

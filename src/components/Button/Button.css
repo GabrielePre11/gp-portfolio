@@ -1,0 +1,10 @@
+.button {
+    width: max-content;
+    background: linear-gradient(180.11deg, rgba(25, 55, 109, 0.2) 0.1%, #19376D 99.9%);
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    color: var(--white-col);
+    font-family: var(--second-font);
+    font-weight: 500;
+}

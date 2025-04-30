@@ -1,0 +1,17 @@
+.back-on-top {
+    position: fixed;
+    font-size: 35px;
+    color: var(--white-col);
+    background: var(--blue-gradient-2);
+    right: -50%;
+    width: max-content;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: 4.5%;
+    cursor: pointer;
+}
+
+.back-on-top.visible {
+    right: 3%;
+    transition: right 0.3s ease;
+}
