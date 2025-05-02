@@ -8,8 +8,8 @@ Come secondo progetto di React ho voluto creare un portfolio personale, che mi h
 ## 🚀 Tecnologie usate
 
 - ⚛️ React (+ Vite)
-- 💡 [Framer Motion](https://motion.dev/) (animazioni fluide)
-- 🔵 CSS (responsive e animazioni custom)
+- 💡 [Framer Motion](https://motion.dev/) (animazioni)
+- 🔵 CSS
 - 🌐 Hosting su [Vercel](https://vercel.com/)
 - 📦 Git / GitHub
 
