@@ -9,7 +9,7 @@ Come secondo progetto di React ho voluto creare un portfolio personale, che mi h
 
 - ⚛️ React (+ Vite)
 - 💡 [Framer Motion](https://motion.dev/) (animazioni fluide)
-- 💅 CSS (responsive e animazioni custom)
+- 🔵 CSS (responsive e animazioni custom)
 - 🌐 Hosting su [Vercel](https://vercel.com/)
 - 📦 Git / GitHub
 
@@ -19,7 +19,7 @@ Come secondo progetto di React ho voluto creare un portfolio personale, che mi h
 
 👉 [GP Portfolio](https://gp-portfolio-kappa.vercel.app/)
 
-## 🙌 Contatti
+## ✍🏻 Contatti
 
 💼 [LinkedIn](https://www.linkedin.com/in/tuo-username)
 
