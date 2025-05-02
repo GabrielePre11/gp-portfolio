@@ -1,12 +1,25 @@
-# React + Vite
+# Gabriele Prestano — First Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+👋 Benvenuto/a!
+Come secondo progetto di React ho voluto creare un portfolio personale, che mi ha permesso di migliorare le mie competenze di base di React, e di imparare le basi di Framer Motion, per creare delle animazioni semplici e rendere il sito più fluido e gradevole alla vista dei visitatori. Cercherò di aggiornarlo il prima possibile con nuovi progetti!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologie usate
 
-## Expanding the ESLint configuration
+- ⚛️ React (+ Vite)
+- 💡 [Framer Motion](https://motion.dev/) (animazioni fluide)
+- 💅 CSS (responsive e animazioni custom)
+- 🌐 Hosting su [Vercel](https://vercel.com/)
+- 📦 Git / GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📱 Demo
+
+👉 [GP Portfolio](https://gp-portfolio-kappa.vercel.app/)
+
+## 🙌 Contatti
+
+💼 [LinkedIn](https://www.linkedin.com/in/tuo-username)
+
