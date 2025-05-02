@@ -21,5 +21,5 @@ Come secondo progetto di React ho voluto creare un portfolio personale, che mi h
 
 ## ✍🏻 Contatti
 
-💼 [LinkedIn](https://www.linkedin.com/in/tuo-username)
+💼 [LinkedIn](http://linkedin.com/in/gabriele-prestano-70a346357)
 
