@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import './About.css'
 import SectionTitle from '../../SectionTitle/SectionTitle'
 
@@ -51,7 +52,14 @@ const About = () => {
     ];
 
     return (
-        <section className="section about" aria-label='about section' id="about">
+        <motion.section
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5 }}
+            className="section about"
+            aria-label='about section'
+            id="about">
             <div className="container">
                 <div className="about-content">
                     <SectionTitle title="About Me" />
@@ -65,17 +73,23 @@ const About = () => {
 
                 <ul className="grid-list">
                     {softSkills.map(({ id, icon, skill, description }) => (
-                        <li key={id} className='soft-skill-item'>
+                        <motion.li
+                            initial={{ opacity: 0, x: -10 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.2 * id }}
+                            key={id}
+                            className='soft-skill-item'>
                             <span className='icon'>{icon}</span>
                             <div className="informations">
                                 <h3 className="skill">{skill}</h3>
                                 <p className="desc">{description}</p>
                             </div>
-                        </li>
+                        </motion.li>
                     ))}
                 </ul>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

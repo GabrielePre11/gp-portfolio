@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import './Experience.css'
 import SectionTitle from '../../SectionTitle/SectionTitle'
 
@@ -57,17 +58,34 @@ const Experience = () => {
     ];
 
     return (
-        <section className="section experience" aria-label='experience section' id="experience">
+        <motion.section
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5 }}
+            className="section experience"
+            aria-label='experience section'
+            id="experience">
             <SectionTitle title="Esperienza e studi" />
 
             <div className="container">
                 <ul className="skills">
                     {skills.map(({ id, skill, icon }) => (
                         <li key={id} className="skill-wrapper">
-                            <div className="experience-skill">
+                            <motion.div
+                                initial={{ opacity: 0, rotate: 360 }}
+                                whileInView={{ opacity: 1, rotate: 0 }}
+                                viewport={{ once: true, amount: 0.2 }}
+                                transition={{ duration: 0.5, delay: 0.10 * id }}
+                                className="experience-skill">
                                 {icon}
-                            </div>
-                            <span className="skill-name">{skill}</span>
+                            </motion.div>
+                            <motion.span
+                                initial={{ opacity: 0, x: -100 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.3, delay: 0.10 * id }}
+                                className="skill-name">{skill}</motion.span>
                         </li>
                     ))}
                 </ul>
@@ -93,7 +111,7 @@ const Experience = () => {
                     ))}
                 </ul>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

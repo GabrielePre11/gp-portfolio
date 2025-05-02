@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Navbar.css'
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
@@ -13,8 +13,25 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
         setIsMenuOpen(false);
     }
 
+    // Handle the click of the user outside the nav menu (mobile)
+    const nav = useRef(null);
+
+    const clickOutside = (e) => {
+        if (nav.current && !nav.current.contains(e.target)) {
+            setIsMenuOpen(false)
+        }
+    }
+
+    useEffect(() => {
+        isMenuOpen ? document.addEventListener('mousedown', clickOutside) : document.removeEventListener('mousedown', clickOutside)
+
+        return () => {
+            document.removeEventListener('mousedown', clickOutside);
+        };
+    }, [isMenuOpen]);
+
     return (
-        <nav className={`navbar ${isMenuOpen ? 'opened' : ''}`}>
+        <nav ref={nav} className={`navbar ${isMenuOpen ? 'opened' : ''}`}>
             <ul className='nav-list'>
                 {links.map(({ label, href }, key) => (
                     <li key={key}>

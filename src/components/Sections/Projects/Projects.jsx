@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import './Projects.css'
 import SectionTitle from '../../SectionTitle/SectionTitle'
 import { FaGithub } from "react-icons/fa";
@@ -38,16 +39,25 @@ const Projects = () => {
         }
     ];
 
+    // For animations
+    const MobileView = window.innerWidth < 768;
+
     return (
         <section className="section projects" aria-label='projects section' id="projects">
             <div className="container">
-                <SectionTitle title="Alcuni Progetti (aggiornato a 29/04/25)" />
+                <SectionTitle title="Alcuni Progetti" />
 
                 <ul className="grid-list">
                     {projects.map(({ id, image, href, title, description, languages }) => (
-                        <li key={id} className="project-card">
+                        <motion.li
+                            initial={{ opacity: 0, x: MobileView ? -30 : 0, y: MobileView ? 0 : -30 }}
+                            whileInView={{ opacity: 1, x: 0, y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+                            transition={{ duration: 0.5, delay: 0.3 * id }}
+                            key={id}
+                            className="project-card">
                             <figure className="project-image-wrapper">
-                                <img src={image} alt={title} className="project-img" />
+                                <img src={image} alt={title} className="project-img" loading='lazy' />
 
                                 {id === 1 && (
                                     <a href="https://educity-react-mu.vercel.app/" target='_blank'>
@@ -73,7 +83,7 @@ const Projects = () => {
                                     ))}
                                 </ul>
                             </div>
-                        </li>
+                        </motion.li>
                     ))}
                 </ul>
             </div>

@@ -15,3 +15,8 @@
     right: 3%;
     transition: right 0.3s ease;
 }
+
+.back-on-top.visible:is(:hover, :focus) {
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+}

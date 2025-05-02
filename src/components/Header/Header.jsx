@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion';
 import Navbar from '../Navbar/Navbar'
 import './Header.css'
 
@@ -12,7 +13,12 @@ const Header = () => {
     }
 
     return (
-        <header className="header">
+        <motion.header
+            className="header"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
             <div className="container">
                 <a href="/" className="logo">
                     <h3>Gabriele</h3>
@@ -22,7 +28,7 @@ const Header = () => {
 
                 <BsGrid className={`open-menu ${isMenuOpen ? 'opened' : ''}`} onClick={toggleMenu} aria-label='Open menu' />
             </div>
-        </header>
+        </motion.header>
     )
 }
 
