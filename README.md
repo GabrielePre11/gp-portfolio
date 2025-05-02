@@ -15,6 +15,12 @@ Come secondo progetto di React ho voluto creare un portfolio personale, che mi h
 
 ---
 
+## 📸 Preview
+
+![Screenshot](https://github.com/user-attachments/assets/577481de-6f74-46a8-89ea-2f8bf0eb3ddc)
+
+---
+
 ## 📱 Demo
 
 👉 [GP Portfolio](https://gp-portfolio-kappa.vercel.app/)
