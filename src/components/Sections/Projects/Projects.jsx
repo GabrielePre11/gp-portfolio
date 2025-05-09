@@ -4,16 +4,47 @@ import './Projects.css'
 import SectionTitle from '../../SectionTitle/SectionTitle'
 import { FaGithub } from "react-icons/fa";
 
-import project1 from '../../../assets/images/Progetto1.png'
-import project2 from '../../../assets/images/Progetto2.png'
-import project3 from '../../../assets/images/Progetto3.png'
+import educityProject from '../../../assets/images/educity.png'
+import formProject from '../../../assets/images/form.png'
+import musicPlayerProject from '../../../assets/images/musicPlayer.png'
+import ToDo from '../../../assets/images/TODO.png'
+import Meteo from '../../../assets/images/Meteo.png'
+import Quiz from '../../../assets/images/Quiz.png'
+
 import Button from '../../Button/Button';
 
 const Projects = () => {
     const projects = [
         {
             id: 1,
-            image: project1,
+            image: Quiz,
+            href: "https://github.com/GabrielePre11/gp-quiz-app",
+            title: 'Quiz App',
+            description: "Una Quiz App sviluppata in React, TypeScript e TailwindCSS v4, con un totale di 10 domande e 4 opzioni disponibli per ogni domanda!",
+            languages: ['React', 'TailwindCSS', 'TypeScript']
+        },
+
+        {
+            id: 2,
+            image: Meteo,
+            href: "https://github.com/GabrielePre11/meteo-app",
+            title: 'Weather/Meteo App',
+            description: "Una semplice App Meteo creata in React, TypeScript e Tailwind CSS v4. Le API sono fornite da OpenWeatherMap.",
+            languages: ['React', 'TailwindCSS', 'TypeScript']
+        },
+
+        {
+            id: 3,
+            image: ToDo,
+            href: "https://github.com/GabrielePre11/todo-list",
+            title: 'To-Do List',
+            description: "Una moderna To-Do List creata con React, Vite, TypeScript e TailwindCSS v4, che permette l'aggiunta di nuove attività, l'eliminazione delle attività e il salvataggio con localStorage",
+            languages: ['React', 'TailwindCSS', 'TypeScript']
+        },
+
+        {
+            id: 4,
+            image: educityProject,
             href: "https://github.com/GabrielePre11/educity-react.git",
             title: 'Educity Website',
             description: "Educity è una replica di un sito educativo sviluppata con React e Vite come mio primo progetto e che mi ha permesso di mettere in pratica le basi e gli hooks principali.",
@@ -21,8 +52,8 @@ const Projects = () => {
         },
 
         {
-            id: 2,
-            image: project2,
+            id: 5,
+            image: formProject,
             href: "https://github.com/GabrielePre11/Form-Veicoli-in-TS.git",
             title: 'Form Veicoli',
             description: "Un form in cui l'utente può inserire nei vari campi le informazioni (ex. numero di targa e carburante) di varie categorie di veicoli, registrarli e mostrarli in una lista.",
@@ -30,8 +61,8 @@ const Projects = () => {
         },
 
         {
-            id: 3,
-            image: project3,
+            id: 6,
+            image: musicPlayerProject,
             href: "https://github.com/GabrielePre11/Music-Player.git",
             title: 'Music Player',
             description: "Una semplice interfaccia di un lettore musicale che permette di riprodurre una canzone e mostrare informazioni come titolo, artista e la durata.",
@@ -45,7 +76,7 @@ const Projects = () => {
     return (
         <section className="section projects" aria-label='projects section' id="projects">
             <div className="container">
-                <SectionTitle title="Alcuni Progetti" />
+                <SectionTitle title="Progetti" />
 
                 <ul className="grid-list">
                     {projects.map(({ id, image, href, title, description, languages }) => (
@@ -59,8 +90,26 @@ const Projects = () => {
                             <figure className="project-image-wrapper">
                                 <img src={image} alt={title} className="project-img" loading='lazy' />
 
-                                {id === 1 && (
+                                {id === 4 && (
                                     <a href="https://educity-react-mu.vercel.app/" target='_blank'>
+                                        <Button label="Demo" />
+                                    </a>
+                                )}
+
+                                {id === 1 && (
+                                    <a href="https://gp-quiz-app.vercel.app/" target='_blank'>
+                                        <Button label="Demo" />
+                                    </a>
+                                )}
+
+                                {id === 2 && (
+                                    <a href="https://gp-meteo-app.vercel.app/" target='_blank'>
+                                        <Button label="Demo" />
+                                    </a>
+                                )}
+
+                                {id === 3 && (
+                                    <a href="https://todo-list-woad-sigma.vercel.app/" target='_blank'>
                                         <Button label="Demo" />
                                     </a>
                                 )}
