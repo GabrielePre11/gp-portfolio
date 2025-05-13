@@ -1,9 +1,12 @@
 import React from 'react'
 import './Button.css'
 
-const Button = ({ label }) => {
+const Button = ({ label, icon }) => {
     return (
-        <button className='button' aria-label='Main button'>{label}</button>
+        <button className='button' aria-label='Main button'>
+            {label}
+            {icon}
+        </button>
     )
 }
 

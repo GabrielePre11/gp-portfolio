@@ -29,6 +29,12 @@
     padding-block: 10px 20px;
 }
 
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .hero button:hover {
     box-shadow: 0 0 10px var(--blue-gradient-2), 0 0 20px var(--blue-gradient-2), 0 0 30px var(--blue-gradient-2);
     transition: box-shadow 0.5s ease;
